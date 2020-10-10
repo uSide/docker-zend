@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
-ENV ZEN_VERSION=2.0.20
-ENV ZEN_CHECKSUM=fafb86ec230e7b702cae54bd8f4ec1ea210c3dd36691d5143f6b3de8609f02cc
+ENV ZEN_VERSION=2.0.21-1
+ENV ZEN_CHECKSUM=067500cb9275df911ab1b64562aca57eea3e96c88d256db804d995fd420e0359
 
 RUN apt-get update && apt-get install -y wget && apt-get clean
 RUN wget https://github.com/ZencashOfficial/zen/releases/download/v${ZEN_VERSION}-bitcore/zen-${ZEN_VERSION}-bitcore-amd64.deb \
